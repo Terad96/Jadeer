@@ -3,18 +3,20 @@ var router = express.Router();
 
 router.get("/", function(req,res){
 
-    console.log("I'm on the start page")
-    res.render("index");
+    
+    res.render("pages/index");
 });
 router.get("/about", function(req,res){
 
-    console.log("I'm on the start page")
-    res.render("about");
+    res.render("pages/about");
+});
+router.get("/Ar", function(req,res){
+
+    res.render("pages/about");
 });
 router.get("/login", function(req,res){
 
-    console.log("I'm on the start page")
-    res.render("about");
+    res.render("pages/about");
 });
 
 module.exports= router;
